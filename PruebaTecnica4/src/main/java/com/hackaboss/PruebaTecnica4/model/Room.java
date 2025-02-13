@@ -35,4 +35,6 @@ public class Room {
     @OneToMany(mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<RoomBooking> roomBookings = new ArrayList<>(); // Reservas asociadas con esta habitación.
 
+    public Room(String r001, LocalDate now, LocalDate localDate, boolean b, int i, double v, Hotel hotel) {
+    }
 }

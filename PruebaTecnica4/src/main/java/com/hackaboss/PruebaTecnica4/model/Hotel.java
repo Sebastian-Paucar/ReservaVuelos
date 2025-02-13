@@ -27,4 +27,7 @@ public class Hotel {
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private List<Room> rooms = new ArrayList<>(); // Habitaciones disponibles en el hotel
+
+    public Hotel(String h123, String madrid, String granHotel) {
+    }
 }

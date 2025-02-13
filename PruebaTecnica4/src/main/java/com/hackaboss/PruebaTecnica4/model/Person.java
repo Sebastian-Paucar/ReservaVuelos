@@ -32,4 +32,7 @@ public class Person {
     @JsonIgnore
     @ManyToMany(mappedBy = "persons")
     private List<FlightBooking> flightBookings = new ArrayList<>(); // Reservas de vuelo asociadas con esta persona.
+
+    public Person(String s, String mail, String doe, String john) {
+    }
 }

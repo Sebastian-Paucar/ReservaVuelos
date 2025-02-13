@@ -18,4 +18,7 @@ public class RoomUpdateDto {
     private int numBed;
     private Boolean availableRoom;
     private Double pricePerNight;
+
+    public RoomUpdateDto(LocalDate now, LocalDate localDate, int i, boolean b, double v) {
+    }
 }
